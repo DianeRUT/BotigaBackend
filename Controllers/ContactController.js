@@ -25,7 +25,7 @@ export const getAllContact=async(req,res)=>{
     catch(error){
 res.status(500).json({success: false, message: "server error", error: error.message})
     }
-}
+};
 
 export const getContactById = async (req, res) => {
     try {
