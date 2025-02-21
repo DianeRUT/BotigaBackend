@@ -7,6 +7,6 @@ contactRouter.get("/getAllContact", getAllContact)
 contactRouter.get("/:id", getContactById); 
 contactRouter.get("/:id", getContactById); 
 contactRouter.delete("/:id", deleteContactById); 
-contactRouter.update("/:id", updateContactById); 
+contactRouter.put("/:id", updateContactById); 
 
 export default contactRouter;
