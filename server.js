@@ -3,6 +3,8 @@ import mongoose from "mongoose";
 import dotenv from "dotenv";
 import bodyParser from 'body-parser';
 import mainRouter from "./routes/indexRouting.js";
+import appRouter from "./routes/ProductRouting.js";
+
 dotenv.config();
 const port=process.env.PORT ||3000
 const db_user=process.env.DB_USER;
@@ -13,6 +15,9 @@ const app = express();
 app.use(bodyParser.json());
 
 app.use("/", mainRouter)
+app.use("/", appRouter)
+
+
 
 const dbUri = `mongodb+srv://${db_user}:${db_pass}@cluster0.hi77v.mongodb.net/${db_name}`;
 mongoose.set("strictQuery", false);
