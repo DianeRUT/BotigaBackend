@@ -4,6 +4,7 @@ import dotenv from "dotenv";
 import bodyParser from 'body-parser';
 import mainRouter from "./routes/indexRouting.js";
 import appRouter from "./routes/ProductRouting.js";
+import indexRouter from "./routes/BlogRouting.js";
 
 dotenv.config();
 const port=process.env.PORT ||3000
@@ -16,6 +17,8 @@ app.use(bodyParser.json());
 
 app.use("/", mainRouter)
 app.use("/", appRouter)
+app.use("/", indexRouter)
+
 
 
 
