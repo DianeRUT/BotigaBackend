@@ -20,7 +20,7 @@ const userschema=Schema(
             type:String,
             enum:["user","admin"],
             default:"user",
-            required:true,
+            required:true
             
         },
         tokens: { 
