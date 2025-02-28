@@ -12,7 +12,7 @@ export const auth = async (req, res, next) => {
       return res.status(401).json({ message: "Access denied, token missing" });
     }
 
-    const token = authHeader.split(" ")[1]; // Extract the actual token
+    const token = authHeader.split(" ")[1]; 
 
     if (!token) {
       return res.status(401).json({ message: "Access denied, invalid token format" });
