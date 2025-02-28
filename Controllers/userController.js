@@ -1,4 +1,4 @@
-import User from '../models/userModal.js';
+import User from '../Models/userModal.js';
 import bcrypt from 'bcryptjs';
 import { generateAccessToken } from "../Utils/tokenGenerating.js";
 

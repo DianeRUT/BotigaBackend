@@ -1,5 +1,5 @@
 import jwt from "jsonwebtoken";
-import User from "../models/userModal.js";
+import User from "../Models/userModal.js";
 import dotenv from "dotenv";
 
 dotenv.config();
