@@ -51,7 +51,6 @@ export const Register = async (req, res) => {
     try {
       const { userEmail, userPassword } = req.body;
   
-      // Find user by email
       const user = await User.findOne({ userEmail });
   
       if (!user) {
